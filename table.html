@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <title>Bootstrap table from codepen</title>
-  </head>
-  <body>
-    <div>
-      <h2 class="text-center">This is a bootstrap table</h2>
-      <table class="table table-striped">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!-- Add Bootstraps css -->
+  <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+  <title>Bootstrap table from codepen</title>
+</head>
+<body>
+  <div class="container">
+    <h2>This is a bootstrap table</h2>
+    <p>It has a border, no stripped rows, but with .table-hover animation class. You need to add Bootstraps JS for that too work. Adding the JS file isn't mentioned in the slides, at least not around slide 46. However, for a lot of boostrap animations, like the navigation bar, you will need the JS. View the script tag at the bottom of table.html.</p>
+    <table class="table table-bordered table-hover">
+      <tbody>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+        </tr>
         <tr>
           <td>
             I am a
@@ -23,7 +36,7 @@
             stripes.
           </td>
         </tr>
-        <tr>
+        <tr class="success">
           <td>
             Do you find them
           </td>
@@ -39,6 +52,14 @@
             mesmerising?
           </td>
         </tr>
+        <tr class="info">
+          <td>
+            Do you find coding
+          </td>
+          <td>
+            exciting or frustrating?
+          </td>
+        </tr>
         <tr>
           <td>
             Wooaahh ..
@@ -47,12 +68,18 @@
             .. such stripiness!
           </td>
         </tr>
-      </table>
-    </div>
+      </tbody>
+    </table>
 
     <footer>
       <a href="https://codepen.io/dianaklee/pen/yYVbzv">View original in code pen.</a>
     </footer>
 
-  </body>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- If the CDN is not available, load the local version instead. -->
+  <script>window.jQuery||document.write('<script src="js/jquery.js"><\/script>')</script>
+  <script src="js/bootstrap.js"></script>
+</body>
 </html>
