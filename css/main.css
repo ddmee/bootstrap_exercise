@@ -3,6 +3,15 @@
   font-family: fantasy, sans-serif;
 }
 
+.jumbotron {
+  padding-top: 30px;
+  background-image: url("../images/fruit-and-veg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 400px;
+  color: white;
+}
+
 #social-buttons {
   color: white
 }
