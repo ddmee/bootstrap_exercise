@@ -12,6 +12,15 @@
   color: white;
 }
 
+/* It's fairly normal to expect css to be ordered like html. So if an element
+comes first in html, you'd expect it to come first in the css. Therefore, I have
+inserted #mission before the social-buttons' css because it is before social-buttons
+in the html */
+#mission {
+  background: rgba(32, 35, 41, 0.9);
+  color: #ddd;
+}
+
 #social-buttons {
   color: white
 }
